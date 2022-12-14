@@ -1,0 +1,126 @@
+:root {
+    --azul: #1F1E5A;
+    --laranja: #F18018;
+    --branco: #FFFFFF;
+    --neve: #F0F0F0;
+    --azul-fosco: #37474F;
+    --azul-fosco-claro: #546E7A;
+    --cinza: #B2BCC0;
+    --preto: #212121;
+    --vermelho-info: #D50000;
+    --rosa-info: #C51162;
+    --rosa-info: #90EE02;
+
+    /* 14px */
+    --button: 0.875rem;
+    /* 16px */
+    --sub-title: 1rem;
+    /* 20px */
+    --body2: 1.25rem;
+    /* 24px */
+    --body1: 1.5rem;
+    /* 28px */
+    --h6: 1.75rem;
+    /* 32px */
+    --h5: 2rem;
+    /* 36px */
+    --h4: 2.25rem;
+    /* 40px */
+    --h3: 2.5rem;
+    /* 48px */
+    --h2: 3rem;
+    /* 56px */
+    --h1: 3.5rem;
+}
+
+@font-face {
+    src: url('../font/Merriweather-Regular.ttf');
+    font-family: Merriweather;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    src: url('../font/WorkSans-VariableFont_wght.ttf');
+    font-family: WorkSans;
+    font-weight: normal;
+    font-display: swap;
+}
+
+
+/* RESET CSS */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html {
+    margin-top: 0px !important;
+    background-color: var(--neve);
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+input {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: .25rem;
+    outline: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+label {
+    width: 100%;
+    color: var(--azul-fosco-claro);
+}
+
+.btn {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem 0;
+    background-color: var(--laranja);
+    border-radius: 4px;
+    
+    font-weight: 700;
+    text-align: center;
+    color: var(--branco);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: var(--azul);
+}
